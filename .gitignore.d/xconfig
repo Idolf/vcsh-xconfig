@@ -3,5 +3,4 @@
 !/.gitignore.d/xconfig
 !/.XCompose
 !/.xmodmap
-!/.Xresources
 !/.xsession
