@@ -1,17 +1,13 @@
 #!/bin/bash
 
 # Set up environment
-[ -f ~/.profile ] && . ~/.profile
+[ -f ~/.environment ] && . ~/.environment
 
 # Turn bell off
 xset b off
 
 # Load custom RandR settings
 [ -f ~/.xrandr ] && . ~/.xrandr
-
-# Start the WM
-.cabal/bin/xmonad &
-WMPID=$!
 
 # Desktop background
 feh --bg-scale ~/.wallpaper.jpg
@@ -20,11 +16,13 @@ feh --bg-scale ~/.wallpaper.jpg
 autocutsel -fork
 autocutsel -fork -selection PRIMARY
 
+(sleep 0.1; ssh-add) &
+
 # Compositing manager (I like inactive windows to be just slightly transparent)
 (xcompmgr &)
 
 # Keyboard stuff
-setxkbmap us -variant altgr-intl -option compose:prsc,compose:menu,nodeadkeys
+setxkbmap us -variant altgr-intl -option compose:menu,nodeadkeys
 xmodmap ~/.xmodmap
 
-wait $WMPID
+exec xmonad
