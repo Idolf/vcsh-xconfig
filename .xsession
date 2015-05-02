@@ -10,6 +10,9 @@
 # Turn bell off
 xset b off
 
+# Fix the synaptics driver
+synclient MaxTapTime=0
+
 # Desktop background
 feh --bg-scale ~/.wallpaper.jpg
 
