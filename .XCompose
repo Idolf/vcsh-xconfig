@@ -22,3 +22,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <Multi_key> <equals> : "≡"
 <Multi_key> <t> <o> : "→"
 
+<Multi_key> <G> <a> <m> <m> <a> : "Γ"
+<Multi_key> <D> <e> <l> <t> <a> : "Δ"
+<Multi_key> <t> <a> <u> : "τ"
