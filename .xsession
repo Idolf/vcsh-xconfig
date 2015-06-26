@@ -3,10 +3,6 @@
 # Set up environment
 [ -f ~/.environment ] && . ~/.environment
 
-# Load custom settings (I use this on both my laptop and desktop and
-# they need slightly different settings)
-[ -f ~/.custom ] && . ~/.custom
-
 # Turn bell off
 xset b off
 
