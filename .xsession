@@ -17,7 +17,7 @@ feh --bg-scale ~/.wallpaper.jpg
 autocutsel -fork
 autocutsel -fork -selection PRIMARY
 
-(sleep 0.1; ssh-add) &
+(sleep 0.1; ssh-add `ls ~/.ssh/id_*_* | grep -v 'pub$'`) &
 
 # Compositing manager (I like inactive windows to be just slightly transparent)
 (xcompmgr &)
