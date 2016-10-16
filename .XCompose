@@ -20,7 +20,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <Multi_key> <d> <p> : "∏"
 <Multi_key> <d> <s> : "∑"
 <Multi_key> <i> <n> : "∈"
-<Multi_key> <equals> : "≡"
 <Multi_key> <t> <o> : "→"
 
 <Multi_key> <G> <a> <m> <m> <a> : "Γ"
