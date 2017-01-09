@@ -14,8 +14,8 @@ synclient VertEdgeScroll=0
 feh --bg-scale ~/.wallpaper.jpg
 
 # Make the clipboard a little bit more sane
-autocutsel -fork
-autocutsel -fork -selection PRIMARY
+# autocutsel -fork
+# autocutsel -fork -selection PRIMARY
 
 (sleep 0.1; find ~/.ssh/keys/ -not -type d -not -name '*.pub' -exec ssh-add {} +) &
 
